@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1305692249231002}
+  m_IsPrefabAsset: 1
+--- !u!1 &1305692249231002
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224862097831196718}
+  - component: {fileID: 114504921317600892}
+  m_Layer: 5
+  m_Name: KillFeed
+  m_TagString: KillFeed
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &114504921317600892
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1305692249231002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db98f9b3565e04f4b881636ec9cc6021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _firstNames:
+  - A
+  - BB
+  - CCC
+  - DDDD
+  - EEEEEE
+  _lastNames:
+  - a
+  - bb
+  - ccc
+  - dddd
+  - eeeee
+  _userNames:
+  - BeastMaster64
+  - Pleb420
+  _allyTeamColor: 0090D8
+  _enemyTeamColor: 732E29
+  _minimumTime: 0.5
+  _maximumTime: 4
+  _playerKill: {fileID: 114908400692834386, guid: 8b4db73d13d7cbb409674c4e463266f9,
+    type: 2}
+  _this: {fileID: 1305692249231002}
+--- !u!224 &224862097831196718
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1305692249231002}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -51, y: -360}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
