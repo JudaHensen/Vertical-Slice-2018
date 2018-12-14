@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Vertical slice - 1/Assets/Art/UI/checkpointbar.meta
 guid: 2f114394104d64a4c87a30007282a3a1
+=======
+guid: 223c8713590d0d14494574ae7a88e79c
+>>>>>>> KillFeed:Vertical slice - 1/Assets/Prefabs.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
