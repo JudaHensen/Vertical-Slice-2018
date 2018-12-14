@@ -1,9 +1,13 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 guid: 6de821ec5e1d1dd47ba9097c2ae764f3
 =======
 guid: 83d7725e7c796a44e911f65ddf0bd563
 >>>>>>> KillFeed
+=======
+guid: 7fadae10ce003f24180217fef28561c4
+>>>>>>> VehicleRepairBuff
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
