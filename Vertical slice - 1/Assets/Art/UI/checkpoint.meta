@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Vertical slice - 1/Assets/Art/UI/checkpoint.meta
 guid: 66f6993fe086077438e52a5d7a144c6e
+=======
+guid: 71d5bb747af0df44ba8443a1d583ffce
+>>>>>>> JH_Environment:Vertical slice - 1/Assets/Materials.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
