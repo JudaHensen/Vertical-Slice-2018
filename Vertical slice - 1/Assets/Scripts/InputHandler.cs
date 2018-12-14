@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class InputHandler : MonoBehaviour {
-    
+
     private PlayerMovement movement;
+    private CameraFollow camFollow;
 
     //Horizontal Movement
     private KeyCode moveLeft = KeyCode.A;
@@ -32,13 +33,15 @@ public class InputHandler : MonoBehaviour {
     private KeyCode targetingComputer; // --------------------------
     private KeyCode FineControl; // --------------------------
     private KeyCode shieldRecharge; // --------------------------
-                                    //private KeyCode ; // --------------------------
+    private KeyCode testFunction = KeyCode.T; // --------------------------
 
 
     private void Start()
     {
 
         movement = FindObjectOfType<PlayerMovement>();
+        camFollow = FindObjectOfType<CameraFollow>();
+
     }
 
     void Update ()
@@ -46,26 +49,17 @@ public class InputHandler : MonoBehaviour {
         if (!Input.GetKey(modify))
         {
             //Movement
-            if (Input.GetKey(moveUp))
+            if (Input.GetKey(moveUp) || Input.GetKey(moveDown))
             {
-                //move right
-                movement.MoveUp();
+                //tilt vertical
+                movement.MoveVertical();
             }
-            if (Input.GetKey(moveDown))
+            if (Input.GetKey(moveLeft) || Input.GetKey(moveRight))
             {
-                //move down
-                movement.MoveDown();
+                //tilt horizontal
+                movement.MoveHorizontal();
             }
-            if (Input.GetKey(moveLeft))
-            {
-                //move left
-                movement.MoveLeft();
-            }
-            if (Input.GetKey(moveRight))
-            {
-                //move right
-                movement.MoveRight();
-            }
+
 
 
             if (Input.GetKeyDown(throddleUp))
@@ -78,6 +72,13 @@ public class InputHandler : MonoBehaviour {
             {
                 // slow down
             }
+
+            if (Input.GetKeyDown(testFunction))
+            {
+                StartCoroutine(camFollow.CamShake(1f/2, 1f/3));
+                //camFollow.CamShake(10f, 1000f);
+            }
+
         } else
         // MODIFIED
         {

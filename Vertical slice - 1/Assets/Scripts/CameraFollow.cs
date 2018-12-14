@@ -18,6 +18,10 @@ public class CameraFollow : MonoBehaviour {
     [SerializeField]
     private float zPos;
 
+    private float x;
+    private float y;
+    private float z;
+
     [Header("Rotation")]
     [SerializeField]
     private float xRot;
@@ -26,6 +30,10 @@ public class CameraFollow : MonoBehaviour {
     [SerializeField]
     private float zRot;
 
+    private float xShake = 0;
+    private float yShake = 0;
+
+    
     //[Header("Follow Distance")]
     //[SerializeField]
     //private float dist;
@@ -37,53 +45,50 @@ public class CameraFollow : MonoBehaviour {
     private float posSmoothing;
 
 
+    private void Start()
+    {
+        x = xPos;
+        y = yPos;
+        z = zPos;
+        posTarget.transform.localPosition = new Vector3(0f + xPos + xShake, 0f + yPos + yShake, 0f + zPos);
+    }
+
 
     void FixedUpdate () {
 
-        posTarget.transform.localPosition = new Vector3(0f + xPos, 0f + yPos, 0f + zPos);
 
-        transform.position = Vector3.Lerp(posTarget.transform.position ,posTarget.transform.forward + posTarget.transform.position, posSmoothing);
+        transform.position = Vector3.Lerp(posTarget.transform.position, posTarget.transform.forward + posTarget.transform.position, posSmoothing);
 
         transform.LookAt(lookTarget.transform);
 
         transform.rotation = (lookTarget.transform.rotation);
+        
+    }
 
-        //transform.rotation = Quaternion.Lerp(transform.rotation, lookTarget.transform.rotation, rotSmoothing);
+    public IEnumerator CamShake (float magnitude, float duration)
+    {
 
-        //if (transform.rotation.y < 0)
-        //{
-        //    transform.rotation =  Quaternion.Euler(transform.rotation.x, -transform.rotation.y, transform.rotation.z);
-        //}
+        Debug.Log("yeee");
+
+        float elapsedTime = 0f;
+
+        Vector3 pos = posTarget.transform.localPosition;
+
+        while (elapsedTime < duration)
+        {
+            xShake = Random.Range(-1f, 1f) * magnitude;
+            yShake = Random.Range(-1f, 1f) * magnitude;
+
+            transform.position += new Vector3(xShake, yShake, 0);
+
+            elapsedTime += Time.deltaTime;
+
+            yield return null;
+        }
+
+        xPos = x;
+        yPos = y;
+        zPos = z;
 
     }
 }
-
-
-
-
-        //transform.position = Vector3.Lerp(transform.position, (targetPos + new Vector3(xPos, yPos, zPos)), posSmoothing);
-
-//transform.forward = Vector3.Lerp(transform.rotation.eulerAngles, targetPos - this.transform.position, rotSmoothing);
-
-
-        //targetRot = target.transform.rotation.eulerAngles;
-
-//if(transform.rotation.eulerAngles != targetRot)
-//{
-//transform.rotation = Quaternion.Euler(Vector3.Lerp(transform.rotation.eulerAngles, new Vector3(targetRot.x + xRot, targetRot.y + yRot, targetRot.z + zRot), rotSmoothing));
-//}
-
-
-
-//targetPos = target.transform.position;
-
-//pos = targetPos + new Vector3(xPos,yPos,zPos);
-
-////transform.position = pos;
-
-
-//targetRot = target.transform.rotation.eulerAngles;
-
-//rot = Quaternion.Euler(Vector3.Lerp(targetRot, new Vector3(targetRot.x + xRot, targetRot.y + yRot, targetRot.z + zRot), rotationSmoothing));
-
-//transform.SetPositionAndRotation(pos, rot);
