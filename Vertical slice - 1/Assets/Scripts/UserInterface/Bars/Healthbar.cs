@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class Healthbar : MonoBehaviour {
 
     private Image _image;
+    [SerializeField]
+    private Text _text;
 
     [SerializeField]
     private float _percentage = 100;
@@ -31,6 +33,7 @@ public class Healthbar : MonoBehaviour {
         FalloffUpdater();
 
         UpdateBar();
+        UpdateText();
     }
 
     public void FalloffUpdater()
@@ -50,5 +53,10 @@ public class Healthbar : MonoBehaviour {
     public void UpdateBar()
     {
         _image.fillAmount = _currentPercentage / 100;
+    }
+
+    public void UpdateText()
+    {
+        _text.text = Mathf.Floor(_currentPercentage).ToString();
     }
 }
