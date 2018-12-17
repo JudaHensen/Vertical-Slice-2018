@@ -21,7 +21,7 @@ public class VehicleRepairBuff : MonoBehaviour {
 
     void Update()
     {
-        _trans.Rotate(Vector3.up * _rotationSpeed);
+        _trans.Rotate(Vector3.down * _rotationSpeed);
     }
 
     void OnTriggerEnter(Collider col)
