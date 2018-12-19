@@ -499,8 +499,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f60edeada1ae82f49b31ba05fd88ea49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   lookTarget: {fileID: 791711419}
   posTarget: {fileID: 300842064}
   xPos: 0
@@ -695,10 +695,6 @@ Transform:
   m_Father: {fileID: 137283501}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
---- !u!1001 &1431558607
-=======
---- !u!1 &907868782
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -755,66 +751,12 @@ Transform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1220675683
->>>>>>> SchipTexture
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 137283501}
     m_Modifications:
-<<<<<<< HEAD
-    - target: {fileID: 400052, guid: 4be4d7e82eabe1f4e88df73668fd5d51, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400052, guid: 4be4d7e82eabe1f4e88df73668fd5d51, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.229
-      objectReference: {fileID: 0}
-    - target: {fileID: 400052, guid: 4be4d7e82eabe1f4e88df73668fd5d51, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400052, guid: 4be4d7e82eabe1f4e88df73668fd5d51, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400052, guid: 4be4d7e82eabe1f4e88df73668fd5d51, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400052, guid: 4be4d7e82eabe1f4e88df73668fd5d51, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400052, guid: 4be4d7e82eabe1f4e88df73668fd5d51, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400052, guid: 4be4d7e82eabe1f4e88df73668fd5d51, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 400052, guid: 4be4d7e82eabe1f4e88df73668fd5d51, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.98456275
-      objectReference: {fileID: 0}
-    - target: {fileID: 400052, guid: 4be4d7e82eabe1f4e88df73668fd5d51, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.49228138
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 4be4d7e82eabe1f4e88df73668fd5d51, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 100002, guid: 4be4d7e82eabe1f4e88df73668fd5d51, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4be4d7e82eabe1f4e88df73668fd5d51, type: 3}
-  m_IsPrefabAsset: 0
-=======
     - target: {fileID: 400050, guid: bae21a1d0395f3c419a5edfb02453432, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.00799942
@@ -1006,7 +948,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4739330697862360, guid: 39d70b3bb3f098a418dc8b1bf2ac1dae,
     type: 2}
   m_PrefabInternal: {fileID: 2006483991}
->>>>>>> SchipTexture
 --- !u!1 &2134306791
 GameObject:
   m_ObjectHideFlags: 0
@@ -1046,8 +987,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 402e96af6fa39014aad91b07cf6c3c06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   cube: {fileID: 1036594238172694, guid: 6411b8f57012ac54db83a98668b4a913, type: 2}
 --- !u!114 &2134306794
 MonoBehaviour:
@@ -1058,5 +999,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98a4a276a24ea2a43bf96200ac34a1a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
