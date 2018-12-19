@@ -39,7 +39,7 @@ public class PlayerStats : MonoBehaviour {
                 Die();
             } else if (value > maxHealth)
             {
-                Health = maxHealth;
+                health = maxHealth;
             }
             else health = value;
         }
