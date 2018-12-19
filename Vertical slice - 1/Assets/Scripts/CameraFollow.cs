@@ -54,7 +54,7 @@ public class CameraFollow : MonoBehaviour {
     }
 
 
-    void FixedUpdate () {
+    void Update () {
 
 
         transform.position = Vector3.Lerp(posTarget.transform.position, posTarget.transform.forward + posTarget.transform.position, posSmoothing);
