@@ -28,8 +28,9 @@ public class VehicleRepairBuff : MonoBehaviour {
     {
         if(col.tag == "Player")
         {
-            PlayerData _playerData = col.gameObject.GetComponent<PlayerData>();
-            _playerData.Health = _playerData.Health + _repairAmount;
+           // PlayerData _playerData = col.gameObject.GetComponent<PlayerData>();
+           // _playerData.Health = _playerData.Health + _repairAmount;
+            Destroy(gameObject);
         }
     }
 
