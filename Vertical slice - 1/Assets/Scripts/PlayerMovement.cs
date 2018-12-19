@@ -7,15 +7,26 @@ public class PlayerMovement : MonoBehaviour {
     private Rigidbody rb;
 
     private float speed = 10f;
-    private float tiltSpeed = 100f;
+    private float tiltSpeed = 30f;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
+
+        if (Input.GetKey(KeyCode.Q))
+        {
+            transform.Rotate(0f, 0f, tiltSpeed / 2 * Time.deltaTime);
+        }
+
+        if (Input.GetKey(KeyCode.E))    
+        {
+            transform.Rotate(0f, 0f, -tiltSpeed /2 * Time.deltaTime);
+        }
+
         Neutral();
     }
 
@@ -32,7 +43,8 @@ public class PlayerMovement : MonoBehaviour {
 
     public void MoveHorizontal()
     {
-        transform.Rotate(0f, 0f, -Input.GetAxis("Horizontal") * tiltSpeed * Time.deltaTime);
+        transform.Rotate(0f, Input.GetAxis("Horizontal") * (tiltSpeed * 2.5f) * Time.deltaTime, -Input.GetAxis("Horizontal") * tiltSpeed * Time.deltaTime);
+
     }
 
     //public void MoveLeft()
