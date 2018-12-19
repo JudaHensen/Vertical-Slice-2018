@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerStats : MonoBehaviour {
-    
+
+    [SerializeField] private GameObject healthbar;
     private float maxHealth = 100;
     float health;
 
@@ -15,14 +17,20 @@ public class PlayerStats : MonoBehaviour {
     private void Update()
     {
         collisionCoolDown -= Time.deltaTime;
+        if (health <= 0)
+        {
+            Die();
+        }
     }
 
-    private void OnCollision(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
         if (collision.transform.tag == "Wall" && collisionCoolDown <= 0)
         {
             health -= 25;
             collisionCoolDown = 1f;
+            healthbar.GetComponent<Healthbar>().SetCurrent(health);
+            print(health);
         }
     }
 
@@ -37,11 +45,14 @@ public class PlayerStats : MonoBehaviour {
             if (value < 0)
             {
                 Die();
-            } else if (value > maxHealth)
+            }
+            else if (value > maxHealth)
             {
                 health = maxHealth;
             }
             else health = value;
+
+            healthbar.GetComponent<Healthbar>().SetCurrent(health);
         }
     }
 
@@ -56,7 +67,8 @@ public class PlayerStats : MonoBehaviour {
     public void Die()
     {
         Debug.Log("We ded boi's");
-        Destroy(gameObject);
+        //Destroy(gameObject);
+        SceneManager.LoadScene("Game");
     }
 
 }

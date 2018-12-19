@@ -45,6 +45,11 @@ public class Healthbar : MonoBehaviour {
         }
     }
 
+    public void SetCurrent(float value)
+    {
+        _percentage = value;
+    }
+
     public void EnableFallOff()
     {
         _fallOff = true;
