@@ -221,7 +221,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4952272194392660, guid: faa6790d4d1ba534cb8434fe90eb1382, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 54405381535549098, guid: faa6790d4d1ba534cb8434fe90eb1382,
         type: 2}
@@ -320,7 +320,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1.039136, z: 1.9608637}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 11.41, y: 0, z: 0}
 --- !u!81 &639098506
 AudioListener:
@@ -414,6 +414,83 @@ Transform:
   m_Father: {fileID: 137283501}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1882018749
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4562999645904550, guid: 650fb403b7f2bac47a5a7bb102f877a9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4562999645904550, guid: 650fb403b7f2bac47a5a7bb102f877a9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4562999645904550, guid: 650fb403b7f2bac47a5a7bb102f877a9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4562999645904550, guid: 650fb403b7f2bac47a5a7bb102f877a9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4562999645904550, guid: 650fb403b7f2bac47a5a7bb102f877a9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4562999645904550, guid: 650fb403b7f2bac47a5a7bb102f877a9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4562999645904550, guid: 650fb403b7f2bac47a5a7bb102f877a9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4562999645904550, guid: 650fb403b7f2bac47a5a7bb102f877a9, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198006276968489232, guid: 650fb403b7f2bac47a5a7bb102f877a9,
+        type: 2}
+      propertyPath: CollisionModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4562999645904550, guid: 650fb403b7f2bac47a5a7bb102f877a9, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4562999645904550, guid: 650fb403b7f2bac47a5a7bb102f877a9, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4562999645904550, guid: 650fb403b7f2bac47a5a7bb102f877a9, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 650fb403b7f2bac47a5a7bb102f877a9, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1 &1882018750 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1638289625486634, guid: 650fb403b7f2bac47a5a7bb102f877a9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1882018749}
+--- !u!136 &1882018751
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1882018750}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 7.232804
+  m_Height: 4.5157924
+  m_Direction: 1
+  m_Center: {x: 0.0000015497208, y: -0.0000008157457, z: 5.024921}
 --- !u!1 &2134306791
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,7 +519,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2134306793
 MonoBehaviour:

@@ -5,6 +5,7 @@ using UnityEngine;
 public class InputHandler : MonoBehaviour {
 
     private PlayerMovement movement;
+    private PlayerShoot shoot;
     private CameraFollow camFollow;
 
     //Horizontal Movement
@@ -60,7 +61,10 @@ public class InputHandler : MonoBehaviour {
                 movement.MoveHorizontal();
             }
 
-
+            if (Input.GetKeyDown(fire))
+            {
+                shoot.Shoot();
+            }
 
             if (Input.GetKeyDown(throddleUp))
             {
